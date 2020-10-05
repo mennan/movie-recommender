@@ -17,13 +17,11 @@ namespace MovieRecommender.Api.Controllers
     public class MoviesController : BaseController
     {
         private readonly IMovieService _movieService;
-        private readonly IMailService _mailService;
         private readonly ILogger<MoviesController> _logger;
 
-        public MoviesController(IMovieService movieService, IMailService mailService, ILogger<MoviesController> logger)
+        public MoviesController(IMovieService movieService, ILogger<MoviesController> logger)
         {
             _movieService = movieService;
-            _mailService = mailService;
             _logger = logger;
         }
 

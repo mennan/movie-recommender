@@ -1,0 +1,7 @@
+﻿<wpf:ResourceDictionary xml:space="preserve" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:ss="urn:shemas-jetbrains-com:settings-storage-xaml" xmlns:wpf="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=65c42603_002D5a84_002D4e48_002D8a94_002D318f88d89152/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="Get_List_ReturnsMovieList" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;
+  &lt;TestAncestor&gt;
+    &lt;TestId&gt;xUnit::EA1CDD0C-B98D-405C-AA9E-A8B0BB4129FC::.NETCoreApp,Version=v3.1::MovieRecommender.Api.Tests.MoviesControllerTests.Get_List_ReturnsMovieList&lt;/TestId&gt;
+    &lt;TestId&gt;xUnit::EA1CDD0C-B98D-405C-AA9E-A8B0BB4129FC::.NETCoreApp,Version=v3.1::MovieRecommender.Api.Tests.MoviesControllerTests.GetDetails_List_ReturnsMovieDetails&lt;/TestId&gt;
+  &lt;/TestAncestor&gt;
+&lt;/SessionState&gt;</s:String></wpf:ResourceDictionary>
