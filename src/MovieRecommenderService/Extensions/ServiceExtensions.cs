@@ -15,7 +15,8 @@ namespace MovieRecommenderService.Extensions
         public static void ConfigureContext(this IServiceCollection services, IConfiguration configuration)
         {
             var connectionString = configuration.GetConnectionString("Db");
-            services.AddDbContext<MovieRecommenderContext>(options => options.UseNpgsql(connectionString));
+            services.AddDbContext<MovieRecommenderContext>(options =>
+                options.UseNpgsql(connectionString));
         }
 
         public static void ConfigureRepository(this IServiceCollection services, IConfiguration configuration)
@@ -26,10 +27,13 @@ namespace MovieRecommenderService.Extensions
             services.AddScoped<IMailService>(x => new MailService
             {
                 Host = configuration["Mail:Host"],
-                Port = string.IsNullOrEmpty(configuration["Mail:Port"]) ? 0 : Convert.ToInt32(configuration["Mail:Port"]),
+                Port = string.IsNullOrEmpty(configuration["Mail:Port"])
+                    ? 0
+                    : Convert.ToInt32(configuration["Mail:Port"]),
                 UserName = configuration["Mail:UserName"],
                 Password = configuration["Mail:Password"],
-                UseSsl = !string.IsNullOrEmpty(configuration["Mail:UseSsl"]) && Convert.ToBoolean(configuration["Mail:UseSsl"])
+                UseSsl = !string.IsNullOrEmpty(configuration["Mail:UseSsl"]) &&
+                         Convert.ToBoolean(configuration["Mail:UseSsl"])
             });
         }
     }

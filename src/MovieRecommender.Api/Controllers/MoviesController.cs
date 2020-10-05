@@ -58,6 +58,7 @@ namespace MovieRecommender.Api.Controllers
             }
             catch (Exception ex)
             {
+                _logger.LogError(ex, "Get");
                 return Error(ex.Message, null);
             }
         }
@@ -86,6 +87,7 @@ namespace MovieRecommender.Api.Controllers
             }
             catch (Exception ex)
             {
+                _logger.LogError(ex, "GetDetails");
                 return Error(ex.Message, null);
             }
         }
@@ -123,6 +125,7 @@ namespace MovieRecommender.Api.Controllers
             }
             catch (Exception ex)
             {
+                _logger.LogError(ex, "Rate");
                 return Error(ex.Message, null);
             }
         }
@@ -156,6 +159,7 @@ namespace MovieRecommender.Api.Controllers
             }
             catch (Exception ex)
             {
+                _logger.LogError(ex, "Suggest");
                 return Error(ex.Message, null);
             }
         }

@@ -21,5 +21,8 @@ namespace MovieRecommender.Entity.Models
         
         [Required]
         public string Note { get; set; }
+
+        public virtual User User { get; set; }
+        public virtual Movie Movie { get; set; }
     }
 }

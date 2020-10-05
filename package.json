@@ -1,0 +1,12 @@
+{
+  "name": "movie-recommender",
+  "version": "1.0.0",
+  "scripts": {
+    "db-migrate": "dotnet ef migrations add --project MovieRecommender.Entity/ --startup-project MovieRecommender.Api/",
+    "db-update": "dotnet ef database update --project MovieRecommender.Entity/ --startup-project MovieRecommender.Api/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com:mennan/movie-recommender.git"
+  }
+}
